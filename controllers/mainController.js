@@ -6,6 +6,9 @@ console.log(dir)
 let controller = {
     index: (req, res) => {
         res.type('html').sendFile(path.resolve(__dirname, '../views/home.html'))
+    },
+    about: (req, res) => {
+        res.type('html').sendFile(path.resolve(__dirname, '../views/about.html'))
     }
 }
 
